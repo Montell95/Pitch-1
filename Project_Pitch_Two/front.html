@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List | Mini Asana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Personal Mini Asana</h1>
+      <h2>To-do list to map out your day and tick off your chapters</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Daily Inspiration</h3>
+                <p1>
+                     "Give me six hours to chop down a tree and I will spend the first four sharpening the axe."
+                    — Abraham Lincoln
+                 </p1>
+      </section>
+      <section>
+        <h3>What are we doing today?</h3>
+        <form id="task-form">
+          <div class="task-group">
+            <label for="task1">Task 1:</label>
+            <input type="text" id="task1" name="task1" placeholder="Enter task 1" />
+            <label for="deadline1">Deadline:</label>
+            <input type="date" id="deadline1" name="deadline1" />
+          </div>
+
+          <div class="task-group">
+            <label for="task2">Task 2:</label>
+            <input type="text" id="task2" name="task2" placeholder="Enter task 2" />
+            <label for="deadline2">Deadline:</label>
+            <input type="date" id="deadline2" name="deadline2" />
+          </div>
+
+          <div class="task-group">
+            <label for="task3">Task 3:</label>
+            <input type="text" id="task3" name="task3" placeholder="Enter task 3" />
+            <label for="deadline3">Deadline:</label>
+            <input type="date" id="deadline3" name="deadline3" />
+          </div>
+
+          <div class="task-group">
+            <label for="task4">Task 4:</label>
+            <input type="text" id="task4" name="task4" placeholder="Enter task 4" />
+            <label for="deadline4">Deadline:</label>
+            <input type="date" id="deadline4" name="deadline4" />
+          </div>
+
+          <button type="submit" id="submit">Submit Tasks</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Mark Completed Tasks & Leave Comments</h3>
+        <form id="completed-task-form">
+          <div class="completion-group">
+            <label>
+              <input type="checkbox" id="completed1" name="completed1" />
+              Task 1 Completed?
+            </label>
+            <textarea id="comment1" name="comment1" rows="2" placeholder="Add comments for task 1 (optional)"></textarea>
+          </div>
+
+          <div class="completion-group">
+            <label>
+              <input type="checkbox" id="completed2" name="completed2" />
+              Task 2 Completed?
+            </label>
+            <textarea id="comment2" name="comment2" rows="2" placeholder="Add comments for task 2 (optional)"></textarea>
+          </div>
+
+          <div class="completion-group">
+            <label>
+              <input type="checkbox" id="completed3" name="completed3" />
+              Task 3 Completed?
+            </label>
+            <textarea id="comment3" name="comment3" rows="2" placeholder="Add comments for task 3 (optional)"></textarea>
+          </div>
+
+          <div class="completion-group">
+            <label>
+              <input type="checkbox" id="completed4" name="completed4" />
+              Task 4 Completed?
+            </label>
+            <textarea id="comment4" name="comment4" rows="2" placeholder="Add comments for task 4 (optional)"></textarea>
+          </div>
+
+          <button type="submit">Submit Completion Status</button>
+        </form>
+      </section>
+
+      
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
